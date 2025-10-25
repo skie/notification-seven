@@ -1,0 +1,10 @@
+    /**
+     * Get the Seven SMS representation of the notification
+     *
+     * @param \Cake\Datasource\EntityInterface|\Cake\Notification\AnonymousNotifiable $notifiable The entity receiving the notification
+     * @return \Cake\Notification\Seven\Message\SevenMessage
+     */
+    public function toSeven(EntityInterface|AnonymousNotifiable $notifiable): SevenMessage
+    {
+        return SevenMessage::create('{{ notificationName }}: You have a new notification');
+    }
