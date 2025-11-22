@@ -13,7 +13,7 @@ use Cake\SevenNotification\Provider\SevenChannelProvider;
  *
  * Registers the Seven.io SMS notification channel with the CakePHP Notification plugin.
  */
-class Plugin extends BasePlugin
+class SevenPlugin extends BasePlugin
 {
     /**
      * Bootstrap hook
